@@ -1,4 +1,5 @@
 /* did you know that pressing ctrl+a would show some secrets */
+
 /* common/etc */
 body{
 	
@@ -8,6 +9,7 @@ body{
 	align:center;
 	text-align:justify;
 	width:100%;
+	font-family: 'Roboto', sans-serif;
 }
 
 
@@ -20,7 +22,7 @@ body{
 .head2{
 	color: #ff4f00;
 	text-align: center;
-	font-size: 15px;
+	font-size: 12px;
 }	
 		
 .essay		{
@@ -32,6 +34,7 @@ body{
 	padding-left: 25%;
 	padding-right: 25%;
 	line-height: 1.5;
+
 }
 		
 .essay2		{
@@ -40,15 +43,28 @@ body{
 	font-size: 18px;
 	align: center;
 	padding-top: 0%;
-	padding-left: 6%; 
+	padding-left: 43%; 
 	padding-right: 0%;
 	line-height: 1.5;
+	font-weight:400;
+	text-decoration:underline;
 }
 
 .hehe {
 	color: #ffa500;
 	text-align: center;
 	font-size: 14px;
+}
+
+span {
+	color:white;
+}
+
+img
+	 { max-width: 100%; height: auto; 
+}
+
+html { font-size:100%; 
 }
 
 /* index things */
@@ -84,6 +100,8 @@ body{
     font-size: 2em;
     color: red;
   }
+
+
 }
 
 
@@ -117,8 +135,8 @@ body{
 
 #page > main {
 	grid-area: main;
-	grid-width: 200px;
-	background-color: #0;
+	grid-width: 2px;
+    background-color: #0;
 }
 
 #page > footer {
@@ -153,7 +171,7 @@ body{
 #index2 > main {
 	grid-area: main;
 	grid-width: 200px;
-	background-color: #00FFFF;
+	background-color: #blue;
 }
 
 #index2 > footer {
@@ -161,6 +179,14 @@ body{
 	background-color: #FFFFFF;
 }
 
+#footer{
+                    
+    font-size: 25px !important;
+    margin-top: 30px!important;
+	color:white;
+	
+}
+                
 
 
 /* Nav Bar */ 
@@ -173,18 +199,20 @@ ul {
 	background-color: #808080;
 	position: fixed;
 	top: 0;
-	left: 0px;
+	left: 0;
+	right: 0;
+	
 	width: 100%;
 	position: -webkit-sticky;
 	position: sticky;
-	top: 0;
-
 }
 
 
 li {
 	float: left;
 	border-right: 1px solid #bbb;
+	margin-bottom: 10px;
+	margin-left: 10px;
 }
 
 
@@ -206,12 +234,43 @@ li a:hover {
 }
 
 .active {
-	background-color: #1b1b1b;
+	background-color: #707070;
+	text-decoration: underline;
 }
 
 .wak	{
-	margin-top: 5px;
+	margin-top: 10px;
 	margin-left: 5px;
+	margin-botttom: 5px;
 }
 
+/**Media**/
+
+
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+
+
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+
+@media (min-device-width:600px) {
+    img[data-src-600px] {
+        content: attr(data-src-600px, url);
+    }
+}
+
+@media (min-device-width:800px) {
+    img[data-src-800px] {
+        content: attr(data-src-800px, url);
+    }
+}
+
+@media (min-width: 640px) { body {font-size:1rem;} } 
+@media (min-width:960px) { body {font-size:1.2rem;} } 
+@media (min-width:1100px) { body {font-size:1.5rem;} } 
 			
