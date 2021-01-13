@@ -12,14 +12,22 @@ body{
 	font-family: 'Roboto', sans-serif;
 }
 
+h3	{
+	color:white;
+}
 
-.head{
+h2 {
+	color:orange;
+	font-weight:600;
+}
+
+.head	{
 	color: #cd7a00;
 	text-align: center;
 	font-size: 48px;
 }
 		
-.head2{
+.head2		{
 	color: #ff4f00;
 	text-align: center;
 	font-size: 12px;
@@ -31,8 +39,8 @@ body{
 	font-size: 18px;
 	text-align: center;
 	padding-top: 1%;
-	padding-left: 25%;
-	padding-right: 25%;
+	padding-left: 15%;
+	padding-right: 15%;
 	line-height: 1.5;
 
 }
@@ -45,8 +53,9 @@ body{
 	padding-top: 0%;
 	padding-left: 43%; 
 	padding-right: 0%;
+	padding-bottom:0%;
 	line-height: 1.5;
-	font-weight:400;
+	font-weight:700;
 	text-decoration:underline;
 }
 
@@ -54,6 +63,12 @@ body{
 	color: #ffa500;
 	text-align: center;
 	font-size: 14px;
+}
+
+.hehea {
+	color: red;
+	text-align: center;
+	font-size: 23px;
 }
 
 span {
@@ -65,6 +80,9 @@ img
 }
 
 html { font-size:100%; 
+}
+
+header { margin-top: 250px;
 }
 
 /* index things */
@@ -191,6 +209,17 @@ html { font-size:100%;
 
 /* Nav Bar */ 
 
+nav {
+   position: fixed;
+   top: 0px;
+   width: 100%;
+   background-color: rgb(39, 39, 39);
+   overflow: auto;
+   height: auto;
+   transition: 0.5s;
+   padding: 50px 10px;
+}
+
 ul {
 	list-style-type: none;
 	margin: 0;
@@ -213,6 +242,7 @@ li {
 	border-right: 1px solid #bbb;
 	margin-bottom: 10px;
 	margin-left: 10px;
+	margin-top:0px;
 }
 
 
@@ -238,10 +268,12 @@ li a:hover {
 	text-decoration: underline;
 }
 
-.wak	{
-	margin-top: 10px;
-	margin-left: 5px;
-	margin-botttom: 5px;
+ .logo-image{
+    width: 180px;
+    height: 180px;
+    border-radius: 0%;
+    overflow: hidden;
+    margin-top: 10px;
 }
 
 /**Media**/
@@ -273,18 +305,19 @@ li a:hover {
 @media (min-width: 640px) { body {font-size:1rem;} } 
 @media (min-width:960px) { body {font-size:1.2rem;} } 
 @media (min-width:1100px) { body {font-size:1.5rem;} } 
-			
-			
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
 			
 			
 /**Uh oh**/
 
-/* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
   display: none;
 }
 
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
@@ -293,7 +326,6 @@ li a:hover {
   }
 }
 
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 600px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive a.icon {
@@ -308,7 +340,6 @@ li a:hover {
   }
 }
 
-/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function myFunction() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
@@ -316,3 +347,18 @@ function myFunction() {
   } else {
     x.className = "topnav";
   }
+  
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+
+.company-logo {
+   font-size: 50px;
+   color: white;
+   position: absolute;
+   right: 30px;
+   transition: 0.3s;
+}
+
